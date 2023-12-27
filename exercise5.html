@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capital</title>
+  </head>
+
+  <body>
+    <input
+      type="text"
+      placeholder="Enter string..."
+      id="word"
+      onchange="funName()"
+    />
+    <h2 id="capital">...</h2>
+
+    <script>
+      function funName() {
+        const word = document.getElementById("word").value;
+        if(word.includes(".")){
+          
+        }
+        const capital = word[0].toUpperCase() + word.slice(1);
+        console.log(capital);
+
+        document.getElementById("capital").innerText = capital;
+      }
+    </script>
+  </body>
+</html>
