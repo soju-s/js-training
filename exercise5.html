@@ -18,13 +18,21 @@
     <script>
       function funName() {
         const word = document.getElementById("word").value;
-        if(word.includes(".")){
+        const words= word.split(". ")
+        for(let res of words){
+          // console.log(res[0]);
+          var capital=res[0].toUpperCase()+res.slice(1)
+          console.log(capital);
+          document.getElementById("captal").innerText=capital
+        }
+        console.log(words);
+        if(word.includes(" ")){
           
         }
-        const capital = word[0].toUpperCase() + word.slice(1);
-        console.log(capital);
+        // const capital = word[0].toUpperCase() + word.slice(1);
+        // console.log(capital);
 
-        document.getElementById("capital").innerText = capital;
+        // document.getElementById("capital").innerText = capital;
       }
     </script>
   </body>
